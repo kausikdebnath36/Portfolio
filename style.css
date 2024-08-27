@@ -1,0 +1,434 @@
+:root{
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html{
+    scroll-behavior: smooth;
+    
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*Nav bar*/
+nav{
+    display:flex ;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+    
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size:30px;
+    font-weight:600;
+}
+nav .right a{
+    color: var(--text-color);
+    margin:0 20px ;
+    font-size:22px;
+    font-weight: 600;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px  ;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*Profile*/
+#profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin:20px 0;
+    gap:40px;
+}
+#profile .text{
+    flex: 5;
+}
+
+#profile .text h2{
+    font-size: 45px;
+}
+#profile .text .links{
+   margin-top: 25px;
+}
+
+#profile .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right:10px ;
+    margin-bottom: 150px;
+    transition:.1s ;
+
+}
+#profile .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+#profile .profile-pic{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 150px;
+}
+#profile .profile-pic img{
+    border-radius: 50%;
+    width: 350px;
+}
+
+/*Skills*/
+.skills-section{
+    padding:0 50px ;
+    margin-bottom: 150px;
+}
+.skills-section h2{
+ text-align: center;
+ font-size: 35px;
+}
+.skills-section .text{
+    text-align: center;
+    padding: 0 100px;
+   margin-bottom: 50px;
+}
+
+.skills-section .downloadcv{
+   text-align: center;
+   
+}
+.skills-section .downloadcv a{
+    text-decoration:underline;
+}
+
+.skills-section .cells {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3 ;
+    border-radius: 5px;
+}
+.skills-section .cells .cell img{
+    width: 30px;
+    height:30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+/*Experience*/
+
+.exp-sec{
+    padding:50px 50px ;
+    margin-bottom: 100px;
+}
+.exp-sec h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.exp-sec .exp{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 100px;
+    
+}
+.exp-sec .exp img{
+    width:150px;
+    object-fit: contain;
+    margin-right: 20px;
+    
+}
+
+.exp-sec .exp .company{
+    
+    width: 550px;
+    flex-direction: column;
+    
+}
+
+
+.exp-sec .exp .company span{
+   font-weight: 600;
+   
+}
+
+
+/* Contact */
+
+.contact-sec {
+    padding: 0 50px ;
+    margin-bottom: 100px;
+}
+
+.contact-sec h2{
+    
+    font-size: 35px;
+}
+
+.contact-sec .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-sec .group .text{
+    flex: 3;
+    
+}
+.contact-sec .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.contact-sec .group form input,
+.contact-sec .group form textarea {
+    font-family:'Popins',sans-serif;
+    border: 2px solid var(--link-color);
+    padding: 10px;
+    margin-bottom:15px;
+    background-color: transparent;
+    outline:none;
+    resize: none;
+}
+
+.contact-sec .group form button{
+    font-size: 16px;
+    font-family:'Popins',sans-serif;
+    color: #fff; ;
+    margin-top: 30px;
+    background-color:var(--link-color) ;
+    border: None;
+    height:50px;
+    transition: 0.1s;
+}
+.contact-sec .group form button:hover{
+    filter: brightness(.9);
+}
+
+.contact-sec .group form input,
+.contact-sec .group form textarea::placeholder{
+    text-align: center;
+}
+/* footer */
+.footer-sec{
+    margin:0;
+    background-color: gainsboro;
+    padding: 80px;
+    text-align: center;
+     
+    }
+.footer-sec .footer-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    
+}
+.footer-sec  .cp{
+    color: grey;
+}
+
+
+
+
+@media(max-width:1170px){
+    /* Experience */
+    .exp-sec .exp img{
+        padding: 10px 0;
+        width:100px;   
+    }
+    
+    .exp-sec .exp .company{        
+        width: 550px; 
+    }
+    
+    .exp-sec .exp .company span{
+        font-size: 14px;
+    }
+    .exp-sec .exp .company .range{
+        font-size: 14px;
+        padding-bottom: 10px ;
+    }
+    .exp-sec .exp .des{
+        
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:960px){
+    .exp-sec .exp{
+        flex-direction: column;
+        align-items: center;
+       }
+    
+    
+    .exp-sec .exp .company{  
+        text-align: center;     
+        
+    }
+    
+   
+}
+
+
+
+@media (max-width:813px){
+    /* profile */
+    #profile{
+        flex-direction: column-reverse;
+    }
+    #profile .profile-pic img{
+        width: 250px;
+    }
+
+    
+
+}
+@media (max-width:600px){
+    /*Nav bar*/
+    nav{
+        padding:0 20px;
+
+        
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a{
+         margin: 0 10px;        
+    }
+    /* Profile */
+    #profile{
+        padding: 0 10px;
+        
+    }
+    #profile .text .links a{
+        margin-right: 2px;
+        padding: 5px 8px;
+    }
+      
+    #profile .text h2{
+        font-size: 30px;
+    }
+    #profile .profile-pic img{
+        width:200px;
+    }
+
+   /*Skills*/
+   .skills-section .text{
+    padding:0;
+   }
+    
+   .skills-section{
+    padding:0 25px ;
+    }
+
+    .skills-section .cells .cell {
+        gap: 5px;
+        width: 135px;
+        padding: 10px 8px;
+        margin: 10px;
+
+    }
+    .skills-section .cells .cell span{
+        font-size: 14px;
+    }
+
+    /* contact */
+    .contact-sec {
+        padding:0,20px
+    }
+    .contact-sec .group form{
+        padding: 0;
+    }
+
+
+}
+
+@media (max-width:830px){
+    /*Nav bar*/
+    nav{
+        padding:0 30px;
+
+        
+    }
+    
+    nav .right a{
+        font-size:22px;
+        margin: 0 5px;
+        
+    }
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: var(--background-color);
+        padding:0;
+         }
+
+    nav .left a{
+        font-size:20px;
+    }
+    
+    /*profile*/
+    #profile .text h2{
+        font-size: 35px;
+    }
+    #profile .profile-pic img{
+        width:300px;
+    }
+
+    /* skills */
+    skills-section .text{
+        padding: 0;
+    }
+
+    /* contact */
+    .contact-sec .group{
+        flex-direction: column;
+    }
+
+}
